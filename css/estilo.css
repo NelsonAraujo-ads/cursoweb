@@ -32,3 +32,8 @@ ul li a{
 ul li{
     list-style-type: none;
 }
+
+.card{
+    font-style: italic;
+    margin-top: 50px;
+}
