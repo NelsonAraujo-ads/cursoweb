@@ -11019,7 +11019,10 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #212529;
+  /* Alterado background-color: #212529; */
+background: #3EBB9E;
+background: linear-gradient(45deg, rgba(62, 187, 158, 1) 0%, rgba(99, 201, 142, 1) 77%, rgba(104, 237, 83, 1) 100%);
+  
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
@@ -11044,7 +11047,9 @@ body {
   color: #fff;
 }
 .sb-sidenav-dark .sb-sidenav-footer {
-  background-color: #343a40;
+  /* background-color: #343a40; Alterado*/
+  background: #3EBB9E;
+  
 }
 
 .sb-sidenav-light {

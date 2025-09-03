@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -14,15 +14,13 @@
 </head>
 
 <body class="sb-nav-fixed">
-    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-success">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
-
-        <!--
         <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
                 <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..."
@@ -31,8 +29,6 @@
                         class="fas fa-search"></i></button>
             </div>
         </form>
-        -->
-
         <!-- Navbar-->
         <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
             <li class="nav-item dropdown">
@@ -140,127 +136,88 @@
                     </ol>
                     -->
 
-                    <div class="d-grid gap-2 mt-4 mb-4 d-md-flex justify-content-md-end">
+                    <div class="d-grid gap-2 mb-4 d-md-flex justify-content-md-end">
                         <div class="input-group">
                             <input class="form-control" type="text" placeholder="Procurar por..."
                                 aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                             <button class="btn btn-secondary me-md-1" id="btnNavbarSearch" type="button"><i
                                     class="fas fa-search"></i></button>
                         </div>
-                        <button class="btn btn-primary me-md-1" type="button">Novo</button>
-                        <button class="btn btn-success me-md-1" type="button">Salvar</button>
+                        <button class="btn btn-primary me-md-1" type="button">Adicionar</button>
                         <button class="btn btn-danger" type="button">Excluir</button>
                     </div>
 
-                    <div class="row">
-                        <div class="col-xl-10">
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <i class="fas fa-table me-1"></i>
-                                    Cadastro Geral
-                                </div>
-                                <div class="card-body">
-                                    <form class="row g-3">
-                                        <div class="col-md-6">
-                                            <label for="inputNome" class="form-label">Nome</label>
-                                            <input type="text" class="form-control" id="inputNome">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label for="inputApelido" class="form-label">Apelido</label>
-                                            <input type="text" class="form-control" id="inputApelido">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="inputNome" class="form-label">CPF</label>
-                                            <input type="text" class="form-control" id="inputNome">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="inputApelido" class="form-label">Identidade</label>
-                                            <input type="text" class="form-control" id="inputApelido">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="inputNome" class="form-label">Órgão emissor</label>
-                                            <input type="text" class="form-control" id="inputNome">
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="inputApelido" class="form-label">Data de emissão</label>
-                                            <input type="date" class="form-control" id="inputApelido">
-                                        </div>
-                                        <div class="col-md-2">
-                                            <label for="inputZip" class="form-label">CEP</label>
-                                            <input type="text" class="form-control" id="inputZip">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <label for="inputState" class="form-label">Estado</label>
-                                            <select id="inputState" class="form-select">
-                                                <option>ACRE</option>
-                                                <option>ALAGOAS</option>
-                                                <option>AMAPÁ</option>
-                                                <option>AMAZONAS</option>
-                                                <option>BAHIA</option>
-                                                <option>BRASÍLIA (DF)</option>
-                                                <option selected>CEARÁ</option>
-                                                <option>ESPÍRITO SANTO</option>
-                                                <option>GOIÁS</option>
-                                                <option>MARANHÃO</option>
-                                                <option>MATO GROSSO</option>
-                                                <option>MATO GROSSO DO SUL</option>
-                                                <option>MINAS GERAIS</option>
-                                                <option>PARÁ</option>
-                                                <option>PARAÍBA</option>
-                                                <option>PARANÁ</option>
-                                                <option>PERNAMBUCO</option>
-                                                <option>PIAUÍ</option>
-                                                <option>RIO DE JANEIRO</option>
-                                                <option>RIO GRANDE DO NORTE</option>
-                                                <option>RIO GRANDE DO SUL</option>
-                                                <option>RODÔNIA</option>
-                                                <option>RORAIMA</option>
-                                                <option>SANTA CATARINA</option>
-                                                <option>SÃO PAULO</option>
-                                                <option>SERGIPE</option>
-                                                <option>TOCANTIS</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <label for="inputCity" class="form-label">Cidade</label>
-                                            <input type="text" class="form-control" id="inputCity">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress" class="form-label">Address</label>
-                                            <input type="text" class="form-control" id="inputAddress"
-                                                placeholder="1234 Main St">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="inputAddress2" class="form-label">Address 2</label>
-                                            <input type="text" class="form-control" id="inputAddress2"
-                                                placeholder="Apartment, studio, or floor">
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                <label class="form-check-label" for="gridCheck">
-                                                    Check me out
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <button type="submit" class="btn btn-primary">Sign in</button>
-                                        </div>
-                                    </form>
-
-                                </div>
-                            </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            Cadastro Pessoa
                         </div>
-                        <div class="col-xl-2">
-                            <div>
-                                <figure class="figure">
-                                    <img src="../img/000001.jpg" class="figure-img img-fluid rounded-3 border border-3"
-                                        style="width: 10rem; height: 13rem;">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
+                        <div class="card-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputNome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="inputNome" name="nome">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputApelido" class="form-label">Apelido</label>
+                                    <input type="text" class="form-control" id="inputApelido" name="apelido">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputCPF" class="form-label">CPF</label>
+                                    <input type="text" class="form-control" id="inputCPF" name="cpf">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputIdentidade" class="form-label">Identidade</label>
+                                    <input type="text" class="form-control" id="inputIdentidade" name="identidade">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputOrgao" class="form-label">Órgão emissor</label>
+                                    <input type="text" class="form-control" id="inputOrgao" name="orgao">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputEmissao" class="form-label">Data de emissão</label>
+                                    <input type="date" class="form-control" id="inputEmissao" name="dtemissao">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress" class="form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress"
+                                        placeholder="1234 Main St">
+                                </div>
+                                <div class="col-12">
+                                    <label for="inputAddress2" class="form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="form-label">City</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="form-label">State</label>
+                                    <select id="inputState" class="form-select">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="form-label">Zip</label>
+                                    <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
 
+                        </div>
+                    </div>                    
                 </div>
             </main>
             <footer class="py-4 bg-light mt-auto">
