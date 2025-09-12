@@ -136,8 +136,8 @@
                             <div class="row">
                                 <div class="col-sm-9">
                                     <form>
-                                        <div class="input-group">
-                                            <input class="form-control" type="text" placeholder="Procurar por..."
+                                        <div class="input-group input-group-sm">
+                                            <input class="form-control" type="text" placeholder="Pesquisar por..."
                                                 aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                                             <button class="btn btn-secondary" id="btnNavbarSearch" type="button"><i
                                                     class="fas fa-search"></i></button>
@@ -146,8 +146,8 @@
                                 </div>
                                 <div class="col-sm-3">
                                     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-primary me-md-2" type="button">Adicionar</button>
-                                        <button class="btn btn-danger" type="button">Excluir</button>
+                                        <button class="btn btn-sm btn-primary me-md-2" type="button">Adicionar</button>
+                                        <button class="btn btn-sm btn-danger" type="button">Excluir</button>
                                     </div>
                                 </div>
                             </div>
@@ -159,70 +159,271 @@
                         <div class="card-body">
                             <form class="row g-3">
                                 <div class="col-md-6">
-                                    <label for="inputEmail4" class="form-label">Nome Completo</label>
-                                    <input type="text" class="form-control form-control-sm id=" inputEmail4">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Nome
+                                        Completo</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
                                 </div>
-                                <div class="col-md-6">
-                                    <label for="inputPassword4" class="form-label">Apelido</label>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="col-form-label col-form-label-sm">Apelido</label>
                                     <input type="text" class="form-control form-control-sm" id="inputPassword4">
                                 </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">CPF/MF</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Identidade</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Órgão Emissor</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Data de Emissão</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Nacionalidade</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Naturalidade</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Gênero</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>
-                                <div class="col-3">
-                                    <label for="inputAddress" class="form-label">Data de Nascimento</label>
-                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
-                                </div>                                                  
                                 <div class="col-md-2">
-                                    <label for="inputZip" class="form-label">CEP</label>
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Nascimento</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">CPF</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress"
+                                        class="col-form-label col-form-label-sm">Identidade</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Órgão
+                                        Emissor</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Emissão</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Nacionalidade</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>AFEGÃ(O)</option>
+                                        <option>ALEMÃ(ÃO)</option>
+                                        <option selected>BRASILEIRO(A)</option>
+                                        <option>BRITÂNICO(A)</option>
+                                        <option>CHILENO(A)</option>
+                                        <option>PORTUGUÊS(ESA)</option>
+                                    </select>
+                                </div>                                
+                                <div class="col-md-2">
+                                    <label for="inputAddress"
+                                        class="col-form-label col-form-label-sm">Naturalidade</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress"
+                                        placeholder="Municipio - UF">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">CNH</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Categoria</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Validade</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Sexo</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>MASCULINO</option>
+                                        <option>FEMININO</option>                                        
+                                    </select>
+                                </div>                
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Gênero</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>MASCULINO</option>
+                                        <option>FEMININO</option>
+                                        <option>NÃO-BINÁRIO</option>
+                                        <option>OUTRO</option>
+                                        <option>PREFERE NÃO INFORMAR</option>                                        
+                                    </select>
+                                </div>                                                
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 1</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 2</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="col-form-label col-form-label-sm">CEP</label>
                                     <input type="text" class="form-control form-control-sm" id="inputZip">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="inputState" class="form-label">Estado</label>
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Estado</label>
                                     <select id="inputState" class="form-select form-select-sm">
                                         <option selected>Choose...</option>
                                         <option>...</option>
                                     </select>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="inputCity" class="form-label">Localidade</label>
+                                    <label for="inputCity" class="col-form-label col-form-label-sm">Localidade</label>
                                     <input type="text" class="form-control form-control-sm" id="inputCity">
                                 </div>
-                                <div class="col-6">
-                                    <label for="inputAddress2" class="form-label">Bairro</label>
+                                <div class="col-md-3">
+                                    <label for="inputAddress2" class="col-form-label col-form-label-sm">Bairro</label>
                                     <input type="text" class="form-control form-control-sm" id="inputAddress2"
                                         placeholder="Apartment, studio, or floor">
-                                </div>                                              
-                                <div class="col-6">
-                                    <label for="inputAddress2" class="form-label">Logradouro</label>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputAddress2"
+                                        class="col-form-label col-form-label-sm">Complemento</label>
                                     <input type="text" class="form-control form-control-sm" id="inputAddress2"
                                         placeholder="Apartment, studio, or floor">
-                                </div>                                              
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputAddress2"
+                                        class="col-form-label col-form-label-sm">Logradouro</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress2" class="col-form-label col-form-label-sm">Número</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2">
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                            Check me out
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+
+                      <div class="shadow card mb-4">
+
+                        <div class="card-body">
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Nome
+                                        Completo</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputPassword4" class="col-form-label col-form-label-sm">Apelido</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputPassword4">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Nascimento</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">CPF</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress"
+                                        class="col-form-label col-form-label-sm">Identidade</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Órgão
+                                        Emissor</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Emissão</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Nacionalidade</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>AFEGÃ(O)</option>
+                                        <option>ALEMÃ(ÃO)</option>
+                                        <option selected>BRASILEIRO(A)</option>
+                                        <option>BRITÂNICO(A)</option>
+                                        <option>CHILENO(A)</option>
+                                        <option>PORTUGUÊS(ESA)</option>
+                                    </select>
+                                </div>                                
+                                <div class="col-md-2">
+                                    <label for="inputAddress"
+                                        class="col-form-label col-form-label-sm">Naturalidade</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress"
+                                        placeholder="Municipio - UF">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">CNH</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Categoria</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress" class="col-form-label col-form-label-sm">Data de
+                                        Validade</label>
+                                    <input type="date" class="form-control form-control-sm" id="inputAddress">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Sexo</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>MASCULINO</option>
+                                        <option>FEMININO</option>                                        
+                                    </select>
+                                </div>                
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Gênero</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>MASCULINO</option>
+                                        <option>FEMININO</option>
+                                        <option>NÃO-BINÁRIO</option>
+                                        <option>OUTRO</option>
+                                        <option>PREFERE NÃO INFORMAR</option>                                        
+                                    </select>
+                                </div>                
+                                <div class="col-md-2">
+                                    <label for="inputZip" class="col-form-label col-form-label-sm">CEP</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputZip">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 1</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 2</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Estado</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputCity" class="col-form-label col-form-label-sm">Localidade</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputCity">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputAddress2" class="col-form-label col-form-label-sm">Bairro</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="inputAddress2"
+                                        class="col-form-label col-form-label-sm">Complemento</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2"
+                                        placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputAddress2"
+                                        class="col-form-label col-form-label-sm">Logradouro</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputAddress2" class="col-form-label col-form-label-sm">Número</label>
+                                    <input type="text" class="form-control form-control-sm" id="inputAddress2">
+                                </div>
                                 <div class="col-12">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" id="gridCheck">
