@@ -128,27 +128,34 @@
         <div id="layoutSidenav_content">
             <main>
                 <div class="container-fluid px-4">
-                    <h2 class="mt-3 mb-3">Cadastro</h2>
+                    <h2 class="mt-3 mb-3">Cadastro Pessoa Física</h2>
 
                     <div class="shadow card mb-3" id="botao">
 
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-9">
-                                    <form>
-                                        <div class="input-group input-group-sm">
-                                            <input class="form-control" type="text" placeholder="Pesquisar por..."
-                                                aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                                            <button class="btn btn-secondary" id="btnNavbarSearch" type="button"><i
-                                                    class="fas fa-search"></i></button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="col-sm-3">
-                                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                                        <button class="btn btn-sm btn-primary me-md-2" type="button">Adicionar</button>
-                                        <button class="btn btn-sm btn-danger" type="button">Excluir</button>
+                            <div>
+
+                                <div class="d-grid gap-2 d-sm-flex justify-content-md-end">
+                                    <div class="input-group">
+                                        <input class="form-control form-control-sm" type="text"
+                                            placeholder="Pesquisar por..." aria-label="Pesquisar por..."
+                                            aria-describedby="btnNavbarSearch" />
+                                        <button class="btn btn-sm btn-primary" id="btnNavbarSearch" type="button"><i
+                                                class="fas fa-search"></i></button>
                                     </div>
+                                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Adicionar</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Pessoa Física</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Pessoa Jurídica</a></li>
+                                    </ul>                                    
+                                    <button type="button" class="btn btn-sm btn-primary">Enviar</button>
+                                    <button type="button" class="btn btn-sm btn-warning">Listar</button>
+                                    <div class="vr"></div>
+                                    <button type="button" class="btn btn-sm btn-danger">Excluir</button>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +199,8 @@
                                     <input type="date" class="form-control form-control-sm" id="inputAddress">
                                 </div>
                                 <div class="col-md-2">
-                                    <label for="inputState" class="col-form-label col-form-label-sm">Nacionalidade</label>
+                                    <label for="inputState"
+                                        class="col-form-label col-form-label-sm">Nacionalidade</label>
                                     <select id="inputState" class="form-select form-select-sm">
                                         <option>AFEGÃ(O)</option>
                                         <option>ALEMÃ(ÃO)</option>
@@ -201,7 +209,7 @@
                                         <option>CHILENO(A)</option>
                                         <option>PORTUGUÊS(ESA)</option>
                                     </select>
-                                </div>                                
+                                </div>
                                 <div class="col-md-2">
                                     <label for="inputAddress"
                                         class="col-form-label col-form-label-sm">Naturalidade</label>
@@ -225,9 +233,9 @@
                                     <label for="inputState" class="col-form-label col-form-label-sm">Sexo</label>
                                     <select id="inputState" class="form-select form-select-sm">
                                         <option>MASCULINO</option>
-                                        <option>FEMININO</option>                                        
+                                        <option>FEMININO</option>
                                     </select>
-                                </div>                
+                                </div>
                                 <div class="col-md-2">
                                     <label for="inputState" class="col-form-label col-form-label-sm">Gênero</label>
                                     <select id="inputState" class="form-select form-select-sm">
@@ -235,14 +243,29 @@
                                         <option>FEMININO</option>
                                         <option>NÃO-BINÁRIO</option>
                                         <option>OUTRO</option>
-                                        <option>PREFERE NÃO INFORMAR</option>                                        
+                                        <option>PREFERE NÃO INFORMAR</option>
                                     </select>
-                                </div>                                                
-                                <div class="col-md-6">
+                                </div>
+                                <div class="col-md-2">
+                                    <label for="inputState" class="col-form-label col-form-label-sm">Estado
+                                        Civil</label>
+                                    <select id="inputState" class="form-select form-select-sm">
+                                        <option>CASADO</option>
+                                        <option>DIVORCIADO</option>
+                                        <option selected>SOLTEIRO</option>
+                                        <option>VIÚVO</option>
+                                        <option>OUTROS</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="inputEmail4" class="col-form-label col-form-label-sm">Cônjuge</label>
+                                    <input type="text" class="form-control form-control-sm" id=" inputEmail4">
+                                </div>
+                                <div class="col-md-4">
                                     <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 1</label>
                                     <input type="text" class="form-control form-control-sm" id=" inputEmail4">
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <label for="inputEmail4" class="col-form-label col-form-label-sm">Filiação 2</label>
                                     <input type="text" class="form-control form-control-sm" id=" inputEmail4">
                                 </div>
@@ -297,7 +320,7 @@
                         </div>
                     </div>
 
-                      <div class="shadow card mb-4">
+                    <div class="shadow card mb-4">
 
                         <div class="card-body">
                             <form class="row g-3">
@@ -335,7 +358,8 @@
                                     <input type="date" class="form-control form-control-sm" id="inputAddress">
                                 </div>
                                 <div class="col-md-2">
-                                    <label for="inputState" class="col-form-label col-form-label-sm">Nacionalidade</label>
+                                    <label for="inputState"
+                                        class="col-form-label col-form-label-sm">Nacionalidade</label>
                                     <select id="inputState" class="form-select form-select-sm">
                                         <option>AFEGÃ(O)</option>
                                         <option>ALEMÃ(ÃO)</option>
@@ -344,7 +368,7 @@
                                         <option>CHILENO(A)</option>
                                         <option>PORTUGUÊS(ESA)</option>
                                     </select>
-                                </div>                                
+                                </div>
                                 <div class="col-md-2">
                                     <label for="inputAddress"
                                         class="col-form-label col-form-label-sm">Naturalidade</label>
@@ -368,9 +392,9 @@
                                     <label for="inputState" class="col-form-label col-form-label-sm">Sexo</label>
                                     <select id="inputState" class="form-select form-select-sm">
                                         <option>MASCULINO</option>
-                                        <option>FEMININO</option>                                        
+                                        <option>FEMININO</option>
                                     </select>
-                                </div>                
+                                </div>
                                 <div class="col-md-2">
                                     <label for="inputState" class="col-form-label col-form-label-sm">Gênero</label>
                                     <select id="inputState" class="form-select form-select-sm">
@@ -378,9 +402,9 @@
                                         <option>FEMININO</option>
                                         <option>NÃO-BINÁRIO</option>
                                         <option>OUTRO</option>
-                                        <option>PREFERE NÃO INFORMAR</option>                                        
+                                        <option>PREFERE NÃO INFORMAR</option>
                                     </select>
-                                </div>                
+                                </div>
                                 <div class="col-md-2">
                                     <label for="inputZip" class="col-form-label col-form-label-sm">CEP</label>
                                     <input type="text" class="form-control form-control-sm" id="inputZip">
