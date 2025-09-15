@@ -13178,7 +13178,7 @@ body {
   border-radius: 0.375rem !important;
 }
 
-#botao{
+#fixar{
   position: sticky;
   top: 64px; 
   right: 30px;
@@ -13186,3 +13186,9 @@ body {
   /*background-color: yellow;*/
 }
 
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 576px) { 
+  .teste{
+    width: 130px;
+  }
+}
